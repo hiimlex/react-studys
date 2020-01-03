@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Button } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 import axios from "axios";
 
@@ -26,21 +26,9 @@ export default function ListLorems() {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid
-          item
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-        >
-          <Button variant="contained">random</Button>
-        </Grid>
         <Grid container spacing={3}>
           {data.map(item => (
-            <div key={item.id}>
-              <Lorem url={item.download_url} author={item.author} />
-              <p></p>
-            </div>
+            <Lorem key={item.id} url={item.download_url} author={item.author} />
           ))}
         </Grid>
       </Grid>
