@@ -29,7 +29,7 @@ export default function Lorem(props) {
       <Card className={classes.card}>
         <CardMedia className={classes.media} image={props.url} />
         <CardActions className={classes.cardactions}>
-          <Grid justify="space-between" container spacing={24}>
+          <Grid justify="space-between" container>
             <Grid item>
               <Box mt={1} ml={2}>
                 <Typography
