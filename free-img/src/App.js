@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {/* Ainda vou melhorar isso */}
       <br />
       <br />
       <br />
