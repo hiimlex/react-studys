@@ -54,7 +54,7 @@ export default function ListLorems() {
             </Button>
           </Grid>
         </Grid>
-        <Grid container spacing={3}>
+        <Grid container spacing={1}>
           {data.map(item => (
             <Lorem key={item.id} url={item.download_url} author={item.author} />
           ))}
